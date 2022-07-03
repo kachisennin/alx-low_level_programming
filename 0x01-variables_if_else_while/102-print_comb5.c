@@ -13,14 +13,13 @@
  * You can only use `putchar` up to 8 times.
  * You are not allowed to use any variable of type `char`.
  * Return: 0
-*/
+ */
 
 int main(void)
 {
 	int x, y;
 
 	for (x = 0; x < 100; x++)
-
 	{
 		for (y = 0; y < 100; y++)
 		{
@@ -32,16 +31,13 @@ int main(void)
 				putchar((y / 10) + 48);
 				putchar((y % 10) + 48);
 				if (x != 98 || y != 99)
-
 				{
 					putchar(',');
-					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
-
 	putchar('\n');
 	return (0);
 }
-					
