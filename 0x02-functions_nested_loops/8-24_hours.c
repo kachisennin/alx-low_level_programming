@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * jack_bauer -> prints 24 hours
+ * jack_bauer - prints every munite of the day, 24 hours
+ * Return: 24 hour clock line by line
  */
 void jack_bauer(void)
 {

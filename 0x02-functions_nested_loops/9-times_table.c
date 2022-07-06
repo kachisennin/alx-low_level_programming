@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * time_tables -> time table
-*/
+ * time_table - prints 9 times table, starting with zero
+ * Return: times table
+ */
 void times_table(void)
 {
 	int x, y, k;
 
 	for (x = 0; x < 10; x++)
 	{
-		for (y = o; y < 10; y++)
+		for (y = 0; y < 10; y++)
 		{
 			k = x * y;
 			if (y == 0)

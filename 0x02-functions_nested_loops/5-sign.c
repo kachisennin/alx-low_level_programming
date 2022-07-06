@@ -3,7 +3,7 @@
 /**
  * print_sign -> prints sign based on condition
  * @n: argument passed
- * Return: 1, 0 -1
+ * Return: 1, 0 -1 depending on condition
  */
 int print_sign(int n)
 {
@@ -17,9 +17,9 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	else
+	else if (n < 0)
 	{
-		_putchar('0');
+		_putchar('-');
 		return (-1);
 	}
 }
