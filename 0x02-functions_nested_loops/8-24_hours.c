@@ -1,9 +1,7 @@
 #include "main.h"
-
 /**
- * jack_bauer - prints every munite of the day, 24 hours
- * Return: 24 hour clock line by line
- */
+* jack_bauer -> prints 24 hours
+*/
 void jack_bauer(void)
 {
 	int i, j;
@@ -19,6 +17,11 @@ void jack_bauer(void)
 			}
 			else if (i >= 10)
 			{
+				_putchar((i / 10) + '0');
+				_putchar((i % 10) + '0');
+			}
+			if (j < 10)
+			{
 				_putchar(':');
 				_putchar('0');
 				_putchar(j + '0');
@@ -29,6 +32,8 @@ void jack_bauer(void)
 				_putchar((j / 10) + '0');
 				_putchar((j % 10) + '0');
 			}
-		_putchar('\n');
+			_putchar('\n');
+		}
+
 	}
 }
