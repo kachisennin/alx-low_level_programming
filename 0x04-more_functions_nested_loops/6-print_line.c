@@ -8,12 +8,18 @@
 
 void print_line(int n)
 {
-	int i = 0;
+	int co;
 
-	for (i = 100)
+	if (n <= 0)
 	{
-		putchar('');
-		_putchar('/n');
+		_putchar('\n');
 	}
-	i++
+	else
+	{
+		for (co = 1; co <= n; co++)
+		{
+			putchar('');
+		}
+		_putchar('\n');
+	}
 }
