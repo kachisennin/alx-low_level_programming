@@ -5,6 +5,7 @@
  * @n: input number of times to print '_'
  * Return: a straight line
  */
+
 void print_line(int n)
 {
 	int co;
