@@ -5,6 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	unsigned long int i, n = 612852475143;
@@ -15,5 +16,6 @@ int main(void)
 			n = n / i;
 	}
 	printf("%lu\n", n);
+
 	return (0);
 }
