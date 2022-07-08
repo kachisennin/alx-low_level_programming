@@ -1,21 +1,23 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - prints prime factors of 612852475143
- *
- * Return: Always 0 (Success)
+ * print_number - prints an integer
+ * @n: input integer parameter
+ * Return: void
  */
 
-int main(void)
+void print_number(int n)
 {
-	unsigned long int i, n = 612852475143;
+	unsigned int i = n;
 
-	for (i = 3; i < 782849; i = i + 2)
+	if (n < 0)
 	{
-		while ((n % i == 0) && (n != i))
-			n = n / i;
+		_putchar(45);
+		i = -i;
 	}
-	printf("%lu\n", n);
-
-	return (0);
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
+	_putchar(i % 10 + '0');
 }
