@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdlib.h>
 
+int _putchar(cahr c);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
 int _atoi(char *s);
