@@ -6,12 +6,16 @@
  *
  * Return: Length.
  */
-int _strlen(char *s);
+int _strlen(char *s)
 {
-	int len = 0;
+	int i;
 
-	while (*str++)
-		len++;
+	i = 0;
 
-	return (len);
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+
+	return (i);
 }
